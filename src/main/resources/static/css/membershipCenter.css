@@ -1,0 +1,182 @@
+/* 全局样式 */
+body {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-family: 'Roboto', sans-serif; /* Change font to Roboto */
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Base font size */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFA500;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif; /* Change font to Montserrat */
+}
+
+p {
+    color: #fff;
+    font-size: 1em; /* Adjust paragraph font size */
+}
+
+h2{
+
+    font-size: 2.5em;
+}
+
+/* 中间部分样式 */
+.membership-levels ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-between;
+}
+
+.membership-item {
+    width: calc(33.33% - 20px); /* Set width for each membership level */
+    margin-bottom: 20px; /* Add spacing between rows */
+    padding: 20px;
+    background-color: #daaf56;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.membership-item img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.membership-info {
+    flex-grow: 1;
+}
+
+.membership-info h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    /*text-align: center;*/
+}
+
+.membership-info span {
+    display: block;
+    font-size: 2em;
+    margin-bottom: 10px;
+    /*text-align: center;*/
+}
+
+.membership-info button {
+    padding: 20px 30px;
+    background-color: #FFA500;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #FFA500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    font-size: 1.8em;
+    align-self: flex-start
+
+}
+
+.membership-item img {
+    width: 200px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.membership-info button:hover {
+    background-color: #FF8C00;
+    border-color: #FF8C00;
+}
+
+
+#top-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#top-section {
+    background-color: #FFA500;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.modal {
+    display: none; /* 默认隐藏弹窗 */
+    position: fixed; /* 固定定位，覆盖在页面上 */
+    z-index: 9999; /* 使弹窗处于最上层 */
+    left: 0;
+    top: 0;
+    width: 100%; /* 弹窗宽度占满整个页面 */
+    height: 100%; /* 弹窗高度占满整个页面 */
+    /*overflow: auto; !* 允许滚动 *!*/
+    background-color: rgba(0,0,0,0.4); /* 半透明黑色背景 */
+}
+
+.modal-content {
+    font-size: 25px;
+    background-color: #d2af69;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#cancelBtn, #confirmBtn {
+    font-size: 25px;
+}
+
+/* 关闭按钮样式 */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

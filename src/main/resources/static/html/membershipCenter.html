@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Card Center</title>
+    <link rel="stylesheet" href="/static/css/membershipCenter.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#index.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#appointment">Make an Appointment</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="top-section">
+    <div class="container">
+        <h1>Welcome to Membership Card Center</h1>
+    </div>
+</section>
+
+<section id="membership">
+    <div class="container">
+        <h2>Choose Your Membership Level:</h2>
+        <div class="membership-levels">
+            <ul>
+                <li>
+                    <img src="/static/img/silver.png" alt="Silver Membership" style="width: 200px">
+                    <div class="membership-info">
+                        <h3>Silver</h3>
+                        <span>$99</span>
+                        <button onclick="upgradeMembership('Silver', 99)">Upgrade</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="/static/img/gold.png" alt="Gold Membership" style="width: 200px">
+                    <div class="membership-info">
+                        <h3>Gold</h3>
+                        <span>$199</span>
+                        <button onclick="upgradeMembership('Gold', 199)">Upgrade</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="/static/img/diamond.png" alt="Diamond Membership" style="width: 205px">
+                    <div class="membership-info">
+                        <h3>Diamond</h3>
+                        <span>$299</span>
+                        <button onclick="upgradeMembership('Diamond', 299)">Upgrade</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="container">
+    <div class="container">
+        <p>&copy; 2024 Membership Card Center. All rights reserved.</p>
+    </div>
+</footer>
+
+<div id="confirmationModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Are you sure you want to upgrade your membership?</p>
+        <button id="cancelBtn">Cancel</button>
+        <button id="confirmBtn">Confirm</button>
+    </div>
+</div>
+<script src="/static/js/membershipCenter.js"></script>
+<script src="/static/js/button.js"></script>
+</body>
+</html>
